@@ -1,0 +1,12 @@
+1. conda update conda
+2. conda create -n ml python=3.8
+3. conda info -envs
+4. conda activate ml
+5. conda list
+6. conda install -c conda-forge pandas scikit-learn matplotlib seaborn jupyter
+
+
+pip show 패키지명 >> 설치 여부 알 수 있음
+
+conda env export --name ml > ml.yml  -> 가상환경 설치 정보를 파일로 만들어줌.
+conda env create -f ml.yml  ->  ml.yml 파일을 받아 설치하면 미리 설정된 환경으로 만들어짐
